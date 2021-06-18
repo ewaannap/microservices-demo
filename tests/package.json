@@ -4,6 +4,9 @@
     "cypress-cucumber-preprocessor": "^4.1.2"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": false
+    "nonGlobalStepDefinitions": true
+  },
+  "dependencies": {
+    "@cypress/browserify-preprocessor": "^3.0.1"
   }
 }
