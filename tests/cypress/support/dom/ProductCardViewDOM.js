@@ -5,6 +5,7 @@ const content = {
     addToCard: () => {
         cy.get(content.addToCartButton).click()
     }
+
 }
 
 const ProductDetailsViewDOM = {

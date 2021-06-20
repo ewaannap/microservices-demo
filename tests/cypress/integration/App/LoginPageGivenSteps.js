@@ -4,9 +4,9 @@ import environments from "../../support/environments/config"
 
 Given('I log in as a {string}', (user) => {
     const username = environments.test.users.user1.username
-    const password = 'password'
-    cy.get(CustomerLoginPageViewDom.Form.usernameInput).clear(),
-    cy.get(CustomerLoginPageViewDom.Form.passwordInput).clear(),
+    const password = environments.test.users.user1.password
+
+    CustomerLoginPageViewDom.Form.clearInputs()
     cy.get(CustomerLoginPageViewDom.Form.usernameInput).type(username),
     cy.get(CustomerLoginPageViewDom.Form.passwordInput).type(password),
     CustomerLoginPageViewDom.Form.submitLogIn()

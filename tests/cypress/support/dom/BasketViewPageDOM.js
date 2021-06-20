@@ -6,26 +6,14 @@ const BoxFooter = {
      continueShoppingButton: 'div.pull-left',
      orderButton: '#orderButton',
      proceedToCheckout: () => {
-        cy.get(BoxFooter.orderButton).click()
-     }
-}
-
-// const BoxShippingAdress = {
-
-// }
-
-// const BoxPayment = {
-
-// }
-
-// const BoxCouponCode = {
-
-
-// },
-
-// const BoxOrderSummary = { 
-
-// }
+        cy.
+        get(BoxFooter.orderButton).click()
+     },
+     errorMessageSelector: 'div.alert.alert-danger.alert-dismissible',
+     getErrorMessageSelector: () => {
+         return cy.get(BoxFooter.errorMessageSelector)
+        }
+    }
 
 const BasketViewPageDOM = {
 
