@@ -5,11 +5,17 @@ const topbar = {
   registerSelector: '#top #register',
   goToLoginPage: () => {
       cy.get(topbar.loginSelector).click()
+  },
+  basketOverview: 'a.btn.btn-primary.navbar-btn i.fa.fa-shopping-cart',
+  goToCart: () => {
+    cy.get(topbar.basketOverview).click()
   }
+
 }
 
-const LandingPageViewDOM = {
+
+const HomePageViewDOM = {
     topbar
 }
 
-export default LandingPageViewDOM
+export default HomePageViewDOM
