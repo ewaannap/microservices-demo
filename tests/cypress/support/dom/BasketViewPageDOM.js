@@ -4,10 +4,10 @@ const Basket = {
 
 const BoxFooter = {
      continueShoppingButton: 'div.pull-left',
-     orderButton: '#orderButton',
+     orderButton: '#orderButton:not([disabled])',
      proceedToCheckout: () => {
-        cy.
-        get(BoxFooter.orderButton).click()
+        cy.get(BoxFooter.orderButton)
+        .click( {force: true} )
      },
      errorMessageSelector: 'div.alert.alert-danger.alert-dismissible',
      getErrorMessageSelector: () => {
