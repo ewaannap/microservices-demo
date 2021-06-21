@@ -7,7 +7,7 @@ const BoxFooter = {
      orderButton: '#orderButton:not([disabled])',
      proceedToCheckout: () => {
         cy.get(BoxFooter.orderButton)
-        .click( {force: true} )
+        .click()
      },
      errorMessageSelector: 'div.alert.alert-danger.alert-dismissible',
      getErrorMessageSelector: () => {

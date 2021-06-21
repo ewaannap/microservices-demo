@@ -2,7 +2,7 @@ import { Given } from "cypress-cucumber-preprocessor/steps"
 import CustomerLoginPageViewDom from "../../support/dom/CustomerLoginPageViewDOM"
 import environments from "../../support/environments/config"
 
-Given('I log in as a {string}', (user) => {
+Given('I log in as a user1', () => {
     const username = environments.test.users.user1.username
     const password = environments.test.users.user1.password
 
