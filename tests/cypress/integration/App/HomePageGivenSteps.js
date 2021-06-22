@@ -6,6 +6,8 @@ Given('I am on home page', () => {
     .clearLocalStorage()
     .clearCookies()
     .visit(Cypress.env('CYPRESS_BASE_URL'))
+    Cypress.Cookies.preserveOnce('SESSION')
+
 })
 
 Given('I go to login page', () => {
